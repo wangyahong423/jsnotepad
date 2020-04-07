@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./dlg-search.css">
+  <title>查找对话框</title>
+</head>
+
+<body>
+  <input id='popup' type='button' value='弹出转到对话框' autofocus>
+  <hr>
+  <!-- <div class="notepad-dlg-mask notepad-dlg-about">
+    <div class="dialogbox notepad-dlgbox">
+      <div class="notepad-dlg-titlebar">
+        <p class="title">关于“记事本”</p>
+        <span class="close-btn">✖</span>
+      </div>
+      <div class="main notepad-dlg-main">
+        <h1 class="slogan">JSNotepad</h1>
+        <hr>
+        <img class="app-logo" src="../images/notepad-icon-32.png" alt="JSNotepad">
+        <div class="info">
+          <p>作者：王亚红</p>
+          <p>QQ：2976716563</p>
+          <p>仓库地址：<a href="https://github.com/wangyahong423/jsnotepad/" target="_blank">https://github.com/wangyahong423/jsnotepad/</a></p>
+        </div>
+        <input class="btn-ok btn" type="button" value="确定">
+      </div>
+    </div>
+  </div> -->
+  <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src='./dlg-search.js'></script>
+  <script>
+    $(function () {
+      var $btnDlg = $('#popup');
+      $btnDlg.click(function () {
+        $dlgGoto.show({
+          num: 6,
+          title: '同意',
+          onClick: function () {
+            alert('就知道你会同意的！');
+          }
+        });
+      })
+    });
+  </script>
+</body>
+
+</html>
